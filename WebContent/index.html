@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title id="page-title">Pandora</title>
+	<link rel="stylesheet" type="text/css" href="./extjs/resources/css/ext-all.css">
+    <script type="text/javascript" src="./extjs/ext-debug.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+
+Ext.create('Ext.form.Panel', {
+    title: 'Absolute Layout',
+    width: 400,
+    height: 275,
+    layout: 'absolute',
+    url: 'save-form.php',
+    defaultType: 'textfield',
+    items: [
+        { x: 10, y: 10, xtype: 'label', text: 'Send To:' },
+        { x: 80, y: 10, name: 'to', anchor: '90%' },
+        { x: 10, y: 40, xtype: 'label', text: 'Subject:' },
+        { x: 80, y: 40, name: 'subject', anchor: '90%' },
+        { x: 0, y: 80, xtype: 'textareafield', name: 'msg', anchor: '100% 100%' }
+    ],
+    renderTo: Ext.getBody()
+});
+</script>
+</body>
+</html>

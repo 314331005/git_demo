@@ -18,6 +18,7 @@ public class UserServlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		String type = request.getParameter("type");
 		if(type != null){
 			String jsonStr = readJSONString(request);
