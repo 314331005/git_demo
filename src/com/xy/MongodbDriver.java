@@ -14,7 +14,6 @@ import com.mongodb.client.MongoDatabase;
 public class MongodbDriver {
 	public static void main( String args[] ){
 	      try{   
-	    	  
 	       // 连接到 mongodb 服务
 	         MongoClient mongoClient = new MongoClient( "localhost" , 27017 );
 	       
